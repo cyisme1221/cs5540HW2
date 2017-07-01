@@ -15,6 +15,10 @@
         android:layout_height="wrap_content"
         android:hint="Enter a query, then click Search"
         android:textSize="22sp" />
+    <EditText
+        android:id="@+id/tv_error_message_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -23,16 +27,9 @@
         android:layout_height="wrap_content"
         android:visibility="gone"/>
 
-    <ScrollView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/news_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
 
-        <TextView
-            android:id="@+id/news_text_data"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Make a search!"
-            android:textSize="18sp" />
-    </ScrollView>
 </LinearLayout>

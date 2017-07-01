@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText mSearchBoxEditText;
     private TextView newsTextView;
     private ProgressBar progress;
+    private NewsAdapter newsAdapter;
+    private TextView errorMessageDisplay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         mSearchBoxEditText = (EditText) findViewById(R.id.et_search_box);
-        newsTextView = (TextView) findViewById(R.id.news_text_data);
+        //newsTextView = (TextView) findViewById(R.id.news_text_data);
         progress = (ProgressBar) findViewById(R.id.progressBar);
     }
 
